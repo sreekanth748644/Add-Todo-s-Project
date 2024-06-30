@@ -14,7 +14,7 @@
         //create a li to our div
         const newtodo=document.createElement("li");
         newtodo.classList.add("todo-item");
-        newtodo.innerText="hello";
+        newtodo.innerText= todoInput.value;
         todoDiv.appendChild(newtodo);
         //creating button
         const completedButton=document.createElement('button');
@@ -28,5 +28,6 @@
         trashButton.innerHTML='<i class="fas fa-trash"></i>';
         todoDiv.appendChild(trashButton);
         todoList .appendChild(todoDiv);
+        todoInput.value="";
     }
    
