@@ -71,3 +71,6 @@ font-size: 1rem;
 .todo li{
     flex: 1;
 }
+.fa-check,.fa-trash{
+    pointer-events: none;
+}
