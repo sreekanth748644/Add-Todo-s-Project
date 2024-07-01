@@ -79,3 +79,70 @@ font-size: 1rem;
     text-decoration: line-through;
     opacity: 0.3;
 }
+
+/*CUSTOM SELECTOR */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background-image: none;
+  }
+  
+.select{
+    position: relative;
+    margin: 1rem;
+    overflow: hidden;
+}
+
+select{
+    cursor: pointer;
+    background-color: aqua;
+    width: 10rem;
+    padding: 1rem;
+    color: red;
+}
+.select::after{
+    
+    content: "\25BC";
+    position: absolute;
+    background-color: #d88771;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.select:hover::after{
+    background-color: white;
+ color: #d88771;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
